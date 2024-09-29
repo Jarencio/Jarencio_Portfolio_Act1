@@ -322,6 +322,43 @@ button,input{
     align-items: center; /* Align elements vertically centered */
 }
 
+
+.section_title{
+    text-align: center;
+    padding-top: 2%;
+    font-size: var(--biggest-font-size);
+}
+
+.Language_img{
+    width: 30%; 
+    height: auto;
+    margin: 0 0.5rem;
+}
+
+.images_lang{
+    padding-top: 4%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 0.5rem; 
+    padding-top: 2rem;
+}
+
+.Friends_Images {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 0.5rem; 
+    padding-top: 1rem;
+  }
+  
+  .myfavpics {
+    width: 30%; 
+    height: auto;
+    margin: 0 0.5rem;
+  }
+
+  
 /* Responsive Typography */
 @media screen and (max-width:1024px) {
     :root{
@@ -354,6 +391,14 @@ button,input{
         width: 80%;
         height: auto;
         margin: 0 auto;
+    }
+
+    .myfavpics {
+        width: 70%; /* You can adjust this value to change the width of the images */
+    }
+
+    .Language_img{
+        width: 50%; /* You can adjust this value to change the width of the images */     
     }
 }
 
@@ -390,20 +435,16 @@ button,input{
         height: auto;
         margin: 0 auto;
     }
-}
 
-.section_title{
-    text-align: center;
-    padding-top: 2%;
-    font-size: var(--biggest-font-size);
-}
+    .myfavpics {
+        width: 90%; /* You can adjust this value to change the width of the images */
+    }
 
-.Language_img{
-    align-content: center;
-    width: 20rem;
-    height: auto;
-}
+    .Language_img{
+        width: 50%; /* You can adjust this value to change the width of the images */     
+    }
 
-.images_lang{
-    padding-top: 4%;
+    .images_lang{
+gap: 2rem;
+    }
 }
