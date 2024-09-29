@@ -46,19 +46,6 @@
 --z-modal: 100;
 }
 
-/* Responsive Typography */
-@media screen and (max-width:1024px) {
-    :root{
-        --biggest-font-size: 2rem;
-        --h1-font-size: 1.5rem;
-        --h2-font-size: 1.25rem;
-        --h3-font-size: 1.125rem;
-        --normal-font-size: .938rem;
-        --small-font-size: .813rem;
-        --smaller-font-size: .75rem;
-    }
-}
-
 /* BASE */
 *{
     MARGIN: 0;
@@ -204,4 +191,108 @@ button,input{
 
 .rectangle{
     height: 100%;
+}
+
+.rectangle{
+   height: fit-content;
+}
+
+.name{
+    font-style: italic;
+    font-size: var(--h1-font-size);
+    padding-top: 10px;
+}
+
+.text{
+    text-align: center;
+}
+
+.desc{
+    font-size: var(--normal-font-size);
+}
+
+.Jake_Img{
+    align-items: center;
+}
+
+.Jake_Img{
+    border-radius: 2%;
+    height: auto; 
+    width: 40%;
+    max-width: 100%; 
+    border-width: 10px;
+    border: 3px ridge rgba(255, 255, 255, 0.357); /* This adds a solid black border with a width of 2px */
+}
+
+.Image_Self {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    height: auto; 
+    padding-top: 3%;
+}
+
+
+
+/* Responsive Typography */
+@media screen and (max-width:1024px) {
+    :root{
+        --biggest-font-size: 2rem;
+        --h1-font-size: 1.5rem;
+        --h2-font-size: 1.25rem;
+        --h3-font-size: 1.125rem;
+        --normal-font-size: .938rem;
+        --small-font-size: .813rem;
+        --smaller-font-size: .75rem;
+    }
+
+    .Jake_Img{
+        width: 60%;
+        margin-top: 5%;
+    }
+
+    .name{
+        margin-top: 2% ;
+    }
+}
+
+
+@media screen and (max-width:480px) {
+    :root{
+        --biggest-font-size: 2rem;
+        --h1-font-size: 1.5rem;
+        --h2-font-size: 1.25rem;
+        --h3-font-size: 1.125rem;
+        --normal-font-size: .938rem;
+        --small-font-size: .813rem;
+        --smaller-font-size: .75rem;
+    }
+
+    .Jake_Img{
+        width: 80%;
+        margin-top: 30%;
+    }
+
+    .name{
+        margin-top: 2% ;
+    }
+}
+
+
+.container {
+    max-width: 1250px;
+    margin-left: 1%;
+    margin-left: 1%;
+}
+
+.grid {
+    display: grid;
+}
+
+
+.rectangle{
+    height: 100vh;
+    justify-content: center;
+    align-self: center;
+
 }
