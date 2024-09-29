@@ -48,3 +48,4 @@ function updateNavLinks(currentSection) {
   const navLink = document.querySelector(`[href="#${currentSection.id}"]`);
   navLink.classList.add('active-link');
 }
+

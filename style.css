@@ -358,6 +358,22 @@ button,input{
     margin: 0 0.5rem;
   }
 
+  .Hobbies_Pic{
+    width: auto;
+    height: 20rem;
+  }
+
+  .edits{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 0.5rem; 
+    padding-top: 1rem;
+  }
+
+  .Hobbies_Desc{
+    text-align: center;
+  }
   
 /* Responsive Typography */
 @media screen and (max-width:1024px) {
@@ -394,11 +410,16 @@ button,input{
     }
 
     .myfavpics {
-        width: 70%; /* You can adjust this value to change the width of the images */
+        width: 40%; /* You can adjust this value to change the width of the images */
     }
 
     .Language_img{
-        width: 50%; /* You can adjust this value to change the width of the images */     
+        width: 30%; /* You can adjust this value to change the width of the images */     
+    }
+
+    .Hobbies_Pic {
+        width: 50%;
+        height: auto;
     }
 }
 
@@ -447,4 +468,10 @@ button,input{
     .images_lang{
 gap: 2rem;
     }
+
+    .Hobbies_Pic {
+        width: 80%;
+        height: auto;
+    }
 }
+
