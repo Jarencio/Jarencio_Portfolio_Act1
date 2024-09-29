@@ -375,6 +375,12 @@ button,input{
     text-align: center;
   }
   
+  .Side{
+    padding-left: 10px;
+
+  }
+
+  
 /* Responsive Typography */
 @media screen and (max-width:1024px) {
     :root{
