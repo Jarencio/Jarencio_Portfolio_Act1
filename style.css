@@ -233,52 +233,6 @@ button,input{
 }
 
 
-
-/* Responsive Typography */
-@media screen and (max-width:1024px) {
-    :root{
-        --biggest-font-size: 2rem;
-        --h1-font-size: 1.5rem;
-        --h2-font-size: 1.25rem;
-        --h3-font-size: 1.125rem;
-        --normal-font-size: .938rem;
-        --small-font-size: .813rem;
-        --smaller-font-size: .75rem;
-    }
-
-    .Jake_Img{
-        width: 60%;
-        margin-top: 5%;
-    }
-
-    .name{
-        margin-top: 2% ;
-    }
-}
-
-
-@media screen and (max-width:480px) {
-    :root{
-        --biggest-font-size: 2rem;
-        --h1-font-size: 1.5rem;
-        --h2-font-size: 1.25rem;
-        --h3-font-size: 1.125rem;
-        --normal-font-size: .938rem;
-        --small-font-size: .813rem;
-        --smaller-font-size: .75rem;
-    }
-
-    .Jake_Img{
-        width: 80%;
-        margin-top: 30%;
-    }
-
-    .name{
-        margin-top: 2% ;
-    }
-}
-
-
 .container {
     max-width: 1250px;
     margin-left: 1%;
@@ -360,4 +314,96 @@ button,input{
 
 .work_button:hover .work_button-icon{
     transform: translateX(.25rem);
+}
+
+.options {
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Place elements on opposite sides */
+    align-items: center; /* Align elements vertically centered */
+}
+
+/* Responsive Typography */
+@media screen and (max-width:1024px) {
+    :root{
+        --biggest-font-size: 2rem;
+        --h1-font-size: 1.5rem;
+        --h2-font-size: 1.25rem;
+        --h3-font-size: 1.125rem;
+        --normal-font-size: .938rem;
+        --small-font-size: .813rem;
+        --smaller-font-size: .75rem;
+    }
+
+    .Jake_Img{
+        width: 60%;
+        margin-top: 5%;
+    }
+
+    .name{
+        margin-top: 2% ;
+    }
+
+    .work_container {
+        grid-template-columns: 1fr;
+        gap: 1.8rem;
+        justify-content: center;
+        padding-top: 1rem;
+    }
+
+    .work_card {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (max-width:480px) {
+    :root{
+        --biggest-font-size: 2rem;
+        --h1-font-size: 1.5rem;
+        --h2-font-size: 1.25rem;
+        --h3-font-size: 1.125rem;
+        --normal-font-size: .938rem;
+        --small-font-size: .813rem;
+        --smaller-font-size: .75rem;
+    }
+
+    .Jake_Img{
+        width: 80%;
+        margin-top: 30%;
+    }
+
+    .name{
+        margin-top: 2% ;
+    }
+
+    .work_container {
+        grid-template-columns: 1fr;
+        gap: 1.8rem;
+        justify-content: center;
+        padding-top: 1rem;
+    }
+
+    .work_card {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+.section_title{
+    text-align: center;
+    padding-top: 2%;
+    font-size: var(--biggest-font-size);
+}
+
+.Language_img{
+    align-content: center;
+    width: 20rem;
+    height: auto;
+}
+
+.images_lang{
+    padding-top: 4%;
 }
