@@ -7,7 +7,7 @@
 --hue-color:242;
 
 /* HSL Color Mode */
---skin-color:hsl(342,92%,46%);
+--skin-color:rgb(255, 17, 17);
 --title-color:hsl(var(--hue-color),8%,95%);
 --text-color:hsl(var(--hue-color),8%,85%);
 --body-color:hsl(var(--hue-color),19%,5%);
@@ -330,7 +330,7 @@ button,input{
 }
 
 .Language_img{
-    width: 30%; 
+    width: 20%; 
     height: auto;
     margin: 0 0.5rem;
 }
@@ -380,7 +380,10 @@ button,input{
 
   }
 
-  
+  .work_button a, .color_Red{
+    color: var(--skin-color); /* change this to your desired color */
+  }
+
 /* Responsive Typography */
 @media screen and (max-width:1024px) {
     :root{
